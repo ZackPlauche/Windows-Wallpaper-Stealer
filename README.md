@@ -1,4 +1,6 @@
-# Windows-Wallpaper-Stealer
+# Windows Wallpaper Stealer
+## TL:DR Description
+Download this and run it to have the epic Windows Wallpapers found on your Windows computer's lockscreen in a folder on your Desktop.
 ## Introduction
 \****App and description is intended for Windows users only****
 
@@ -10,7 +12,7 @@ Specifically: `C:\Users\username\AppData\Local\Packages\Microsoft.Windows.Conten
 
 The issue is that they're not saved as .png, .jpg, or any filetype useful for konwing that they're photos, and their names are just a huge mix of random letters and numbers, making them hard to find.
 
-Here's an example name I just pulled from my assets folder:
+Here's an example name I just pulled from my own assets folder:
 > 2cad6ab7697cb65703b03d91bec75d97376d32ba16c27beadf4ecd2e83d31dc3
 
 Not very pretty is it?
