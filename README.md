@@ -1,6 +1,6 @@
 # Windows Wallpaper Stealer
-## TL:DR Description
-Download this and run it to have the epic Windows Wallpapers found on your Windows computer's lockscreen in a folder on your Desktop.
+### *TL:DR Description*
+Download Windows Wallpaper Stealer and run it to have the epic Windows Wallpapers found on your Windows computer's lockscreen in a folder on your Desktop.
 ## Introduction
 \****App and description is intended for Windows users only****
 
