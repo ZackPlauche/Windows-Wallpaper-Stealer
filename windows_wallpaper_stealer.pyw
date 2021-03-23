@@ -11,27 +11,20 @@ ASSETS_PATH = USER_PATH / 'AppData/Local/Packages/Microsoft.Windows.ContentDeliv
 DESKTOP = USER_PATH / 'desktop'
 
 
-class WindowsWallpaperStealer:
-
-    def __init__(self, destination_dir=DESKTOP / 'Windows Wallpapers'):
-        check_if_windows()
-        self.destination_dir = destination_dir
-    
-    def run(self):
-        self.make_destination_dir()
-        self.steal_wallpapers()
-
-    def make_destination_dir(self):
-        self.destination_dir.mkdir(exist_ok=True, parents=True)
-
-    def steal_wallpapers(self):
-        windows_wallpaper_assets = get_image_assets()
-        copy_and_transform_image_assets(windows_wallpaper_assets, self.destination_dir)
+def steal_windows_wallpapers(destination_dir: Path = DESKTOP / 'Windows Wallpapers'):
+    check_if_windows()
+    make_destination_dir(destination_dir)
+    windows_wallpaper_assets = get_image_assets()
+    copy_and_transform_image_assets(windows_wallpaper_assets, destination_dir)
 
 
 def check_if_windows():
     if platform.system() != 'Windows':
         raise SystemError('This app only works on Windows')
+
+
+def make_destination_dir(destination_dir):
+    destination_dir.mkdir(exist_ok=True, parents=True)
 
 
 def copy_and_transform_image_assets(image_assets, destination_dir):
@@ -70,4 +63,4 @@ def get_file_size(file):
 
 
 if __name__ == '__main__':
-    WindowsWallpaperStealer().run()
+    steal_windows_wallpapers()
