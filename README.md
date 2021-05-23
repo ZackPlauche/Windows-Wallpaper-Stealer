@@ -26,9 +26,3 @@ I built this simple program to automate the process of doing the following:
 4. Rename the newly converted images in numerical order (because their original names are long and not useful).
 
 It also adds two folders (Desktop & Mobile) in the Windows Wallpapers folder to store the images you like.  
-
-### Checklist Progress
-- [x] 1. Create a new directory (named "Windows Wallpapers") in the desktop folder to store the wallpapers in.
-- [x] 2. Copy the hidden image assets (of an unreadable file type) to another folder if their file size is more than 20000 bits.
-- [x] 3. Add .jpg to the end of each asset file to convert it into a JPEG image format.
-- [x] 4. Rename the newly converted images in numerical order (because their original names are long and not useful).
